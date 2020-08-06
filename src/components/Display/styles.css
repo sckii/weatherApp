@@ -27,15 +27,23 @@
   
   /* border-top: 2px solid var(--color-border-box); */
 }
-#display-page article .informations-container .graus h1{
-  max-width: 25.5rem;
-  padding-top: 4rem;
-  font-size: 6.8rem;
-  color: var(--color-text-box)
+
+#display-page article .informations-container .graus .date {
+  position: absolute;
+  max-width: 100%;
+  color: var(--color-text-box);
+  font-size: 2rem;
 }
 #display-page article .informations-container .graus img {
-  width: 12rem;
-  padding-top: 4rem;
+  border-radius: 0.5rem;
+  opacity: 0.6;
+  box-shadow: 5px 5px black;
+  max-width: 1080px;
+  width: 100%;
+  margin-top: 4rem;
+}
+.graus h1 {
+  font-size: 6rem;
 }
 
 .informations {
@@ -44,10 +52,10 @@
   align-items: center;
   justify-content: space-around;
 }
-.informations form button {
+.informations form .button button {
   color: var(--color-text);
-  border-bottom-left-radius: 0.8rem;
-  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
   cursor: pointer;
   font: 700 1.6rem Archivo;
   display: flex;
@@ -65,47 +73,53 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
 }
 
 .informations label span {
   position: absolute;
   width: 14rem;
   background-color: white;
-  color: var(--color-text-box);
+  color: var(--color-text-input);
   transform: scale(1.4) translate(3rem);
-  transition: 0.1s ease-in-out;
+  transition: 0.2s linear;
 }
 
 input:focus + span {
   transform: scale(1) translate(-10rem);
   width: fit-content;
   background: 0;
-  border-right: 1px solid var(--color-border-box);
+  border-right: 1px solid var(--color-text-input);
   padding-right: 1rem;
   padding-left: 1.5rem;
 }
 
 .informations label input {
-  border: 1px solid var(--color-border-box);
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  border: 0px solid var(--color-border-box);
   width: 30rem;
   height: 5.5rem;
   max-width: 30rem;
   padding: 0rem 1rem 0 11.5rem;
   display: block;
-  color: var(--color-text-box)
+  color: var(--color-text-input);
 }
 .informations form button:hover{
   opacity: .8;
 }
 /* 0T6fJuP3RonKGySGglmvVK75pMmQvj7u 39502,  */
 
-@media (min-width: 800px){
+@media (min-width: 1000px){
   #display-page {
     max-width: 700px;
   }
   #display-page article {
+    display: grid;
+    grid:
+      search, box;
     width: 50vw;
-    min-height: 39.5vh;
+    min-height: 30.5vh;
     border-radius: 0.4rem;
     border: 1px solid var(--color-border-box);
     background-color: var(--color-box);
@@ -113,11 +127,33 @@ input:focus + span {
   }
   #display-page article .informations-container .graus {
     display: flex;
-    margin-top: 5.5rem;
+    margin-top: .5rem;
     align-items: center;
     justify-content: space-around;
     font-size: 6.8rem;
     /* border-top: 2px solid var(--color-border-box); */
   }
-
+  .informations .input {
+    display: inline-block;
+  }
+  .informations label input{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 1rem;
+  }
+  .informations .button {
+    display: inline-block;
+    
+  }
+  .informations form .button button{
+    position: relative;
+    top: 0.2rem;
+    padding: 2.7rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 0;
+    
+  }
 }

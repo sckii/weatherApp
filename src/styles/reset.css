@@ -1,13 +1,14 @@
 :root {
   font-size: 60%;
 
-  --color-background: #5ad0ff;
-  --color-box: #f3ffaf;
+  --color-background:  rgb(42, 42, 42);
+  --color-box: #24242400;
   --color-text: #f2f2f2;
-  --color-text-box: #ff9dd6;
+  --color-text-box: #ffffff;
   --color-border-header: #09002f7e;
-  --color-border-box: #c3c3c396;
-  --color-button: rgb(255, 172, 172);
+  --color-border-box: #ffffff00;
+  --color-button: rgb(66, 66, 66);
+  --color-text-input: #222222ce;
 }
 
 * {
@@ -21,7 +22,8 @@ html, body, #root {
 }
 
 body {
-  background-color: var(--color-background);
+  background: var(--color-background);
+  background: linear-gradient(0deg, rgba(247,134,134,1) 9%, rgba(179,255,250,1) 100%);
 
 }
 
