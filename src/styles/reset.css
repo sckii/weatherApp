@@ -1,0 +1,51 @@
+:root {
+  font-size: 60%;
+
+  --color-background: #5ad0ff;
+  --color-box: #f3ffaf;
+  --color-text: #f2f2f2;
+  --color-text-box: #ff9dd6;
+  --color-border-header: #09002f7e;
+  --color-border-box: #c3c3c396;
+  --color-button: rgb(255, 172, 172);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:  border-box;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--color-background);
+
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem 'Poppins', sans-serif;
+  color: var(--color-text);
+}
+
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+}
