@@ -3,7 +3,7 @@
 
   --color-background:  rgb(42, 42, 42);
   --color-box: #24242400;
-  --color-text: #f2f2f2;
+  --color-text: rgb(255, 194, 194);
   --color-text-box: #ffffff;
   --color-border-header: #09002f7e;
   --color-border-box: #ffffff00;
@@ -48,6 +48,6 @@ textarea {
 
 @media (min-width: 700px) {
   :root {
-    font-size: 62.5%;
+    font-size: 55%;
   }
 }

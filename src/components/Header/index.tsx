@@ -5,7 +5,7 @@ function Header() {
     return (
         <div id='header-container'>
           <div className="box">
-            <h1><a href='/'>Weather</a></h1>
+            <h1><a href='/'>Weather Search</a></h1>
           </div>
         </div>
     )
